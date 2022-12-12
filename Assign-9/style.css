@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(33 33 39);
+  flex-direction: column;
+  gap: 2rem;
+}
+
+a {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  border: 2px solid;
+  padding: 10px 28px;
+  color: white;
+  background-color: rgb(2 2 97);
+  transition: all 400ms ease-in-out;
+}
+
+a:hover {
+  letter-spacing: 3px;
+  color: darkorchid;
+  box-shadow: 0px 0px 20px 6px var(--clr);
+}
+
+a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 9px;
+  top: -4px;
+  left: 10%;
+  border: 2px solid var(--clr);
+  background-color: #001;
+  transition: all 400ms ease-in-out;
+}
+a:hover::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 9px;
+  top: -4px;
+  left: 80%;
+  border: 2px solid white;
+  background-color: #001;
+}
+
+a::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 9px;
+  bottom: -4px;
+  right: 10%;
+  border: 2px solid var(--clr);
+  background-color: #001;
+  transition: all 400ms ease-in-out;
+}
+a:hover::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 9px;
+  bottom: -4px;
+  right: 80%;
+  border: 2px solid white;
+  background-color: #001;
+}
+
+a > span::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 9px;
+  top: -4px;
+  right: 10%;
+  border: 2px solid var(--clr);
+  background-color: #001;
+  transition: all 400ms ease-in-out;
+}
+
+a:hover > span::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 9px;
+  top: -4px;
+  right: 80%;
+  border: 2px solid white;
+  background-color: #001;
+  transition: all 400ms ease-in-out;
+}
+
+a > span::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 9px;
+  bottom: -4px;
+  left: 10%;
+  border: 2px solid var(--clr);
+  background-color: #001;
+  transition: all 400ms ease-in-out;
+}
+
+a:hover > span::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 9px;
+  bottom: -4px;
+  left: 80%;
+  border: 2px solid white;
+  background-color: #001;
+  transition: all 400ms ease-in-out;
+}

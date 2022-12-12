@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        label,
+        input {
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 2px;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid blue;
+            cursor: pointer;
+            outline: none;
+            background-color: blueviolet;
+            color: white;
+            font-size: 20px;
+            width: 17rem;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="">Enter the String</label>
+    <input type="text" id="myText">
+    <input type="text" id="my">
+
+    <Button onclick="myFunction()">upperCase</Button>
+    <Button id="lower">lowerCase</Button>
+    <Button id="charCount">lengthOfString</Button>
+    <Button id="space">removeSpace</Button>
+    <Button id="subString">subString</Button>
+    <Button id="slice">Slice</Button>
+    <Button id="replace">replace</Button>
+    <Button id="trim">Trim</Button>
+    <Button id="indexOf">indexOf</Button>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

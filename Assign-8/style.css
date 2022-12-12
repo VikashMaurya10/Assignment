@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: yellow;
+    font-family: cursive;
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 12px 0px black;
+    border-radius: 10px;
+}
+.score{
+    text-align: right;
+    color: green;
+}
+
+.input,
+.btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 5px;
+    border: 5px solid green;
+    margin: 15px 0px;
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+    outline: none;
+}
+
+.input::placeholder {
+    color:lightgray;
+    font-family: cursive;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(0.9);
+}
